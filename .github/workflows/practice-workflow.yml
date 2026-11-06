@@ -8,12 +8,12 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-          - name: Checkout source
-            uses: actions/checkout@v7.0.1
+           - name: Checkout source
+             uses: actions/checkout@v7.0.1
 
-          - name: Check Readme file
-            id: check
-            run: |
+           - name: Check Readme file
+             id: check
+             run: |
               ls -la
               test -f README.md
        
