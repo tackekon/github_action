@@ -11,10 +11,13 @@ jobs:
           - name: Checkout source
             uses: actions/checkout@v7.0.1
 
-          - name: show source
-            run: ls -la
+          - name: Check Readme file
+            id: check
+            run: |
+              ls -la
+              test -f README.md
        
-  job_build:
-    runs-on: ubuntu-latest
-  job_deploy:
-    runs-on: ubuntu-latest
+  # job_build:
+  #   runs-on: ubuntu-latest
+  # job_deploy:
+  #   runs-on: ubuntu-latest
